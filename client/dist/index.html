@@ -3,15 +3,55 @@
   <head>
     <meta charset="UTF-8">
     <title>FEC Kickstarter</title>
+    <link rel="stylesheet" href="http://localhost:3003/styles.css">
+    <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <div id="app"></div>
-    <div id="campaign"></div>
-    <div id="pledge"></div>
-    <div id="community"></div>
-    <script src="bundle.js"></script>
+    <nav>
+      <a href="index.html">Explore</a>
+      <a href="index.html">Start a project</a>
+      <a href="index.html">Kickstarter</a>
+      <a href="index.html">Search</a>
+      <a href="index.html">Log in</a>
+    </nav>
+    <div id="header"></div>
+    <div class="tabs">
+      <button class="tab-links">Campaign</button>
+      <button class="tab-links">Community</button>
+      <button class="tab-links">Updates</button>
+    </div>
+
+    <div id="campaign" class="tab-content">
+      <div id="story"></div>
+      <div id="pledge"></div>
+    </div>
+    <div id="community" class="tab-content"></div>
+    <div id="updates" class="tab-content"></div>
+
+      <!-- <div class="tab">
+        <input type="radio" id="tab-campaign" name="tab-group-1" checked>
+        <label for="tab-campaign">Campaign</label>
+        <div id="campaign" class="content"></div>
+        <div id="pledge" class="content"></div>
+      </div>
+      <div class="tab">
+        <input type="radio" id="tab-community" name="tab-group-1">
+        <label for="tab-community">Community</label>
+        <div id="community" class="content"></div>
+      </div>
+      <div class="tab">
+        <input type="radio" id="tab-updates" name="tab-group-1">
+        <label for="tab-updates">Updates</label>
+        <div id="updates" class="content"></div>
+      </div>
+    </div> -->
+    <!-- <script src="bundle.js"></script> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="mainContent.js"></script>
     <script src="http://localhost:3000/bundle.js"></script>
     <script src="http://localhost:3002/bundle.js"></script>
     <script src="http://localhost:3003/bundle.js"></script>
+    <script src="http://localhost:3004/bundle.js"></script>
+    <script src="http://localhost:3007/bundle.js"></script>
   </body>
 </html>
