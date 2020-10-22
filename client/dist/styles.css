@@ -1,56 +1,70 @@
-nav li {
-  display: inline-block;
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*** NAVBAR ***/
+#main-nav {
+  padding-left: 2.4rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
+}
+
+#main-nav a {
+  margin-right: 1.2rem;
+  color: #282828;
+  background-color: #ffffff;
+  font-size: .9rem;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 300;
+}
+
+#main-nav .logo {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+/*** TAB NAVBAR ***/
+.tabs {
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  border-top: 1px solid #D0D0D0;
+  border-bottom: 1px solid #D0D0D0;
+}
+
+.tabs button {
+  border: 0;
+  padding: 20px;
+  background-color: #ffffff;
+  cursor: pointer;
 }
 
 /*** TABBED CONTENT ***/
+#main-content {
+  padding: 50px;
+  box-sizing: border-box;
+}
+
 .tab-content {
   display: none;
+  box-sizing: border-box;
 }
 
 #campaign {
-  display: block;
-}
-/* .tabs {
-  position: relative;
-  min-height: 800px;
-  clear: both;
-  margin: 25px 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-sizing: border-box;
 }
 
-.tab {
-  float: left;
+#pledge {
+  box-sizing: border-box;
 }
-
-.tab label {
-  background: #eee;
-  padding: 10px;
-  border: 1px solid #ccc;
-  margin-left: -1px;
-  position: relative;
-  left: 1px;
-}
-
-.tab [type=radio] {
-  display: none;
-}
-
-.content {
-  position: absolute;
-  top: 28px;
-  left: 0;
-  background: white;
-  right: 0;
-  bottom: 0;
-  padding: 20px;
-  border: 1px solid #ccc;
-}
-
-[type=radio]:checked ~ label {
-  background: white;
-  border-bottom: 1px solid white;
-  z-index: 2;
-}
-
-[type=radio]:checked ~ label ~ .content {
-  z-index: 1;
-} */
