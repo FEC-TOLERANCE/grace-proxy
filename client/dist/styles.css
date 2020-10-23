@@ -57,6 +57,7 @@ body {
 .tab-content {
   display: none;
   box-sizing: border-box;
+  height: 80%;
 }
 
 #campaign {
@@ -67,4 +68,7 @@ body {
 
 #pledge {
   box-sizing: border-box;
+  position: sticky;
+  overflow-y: scroll;
+  height: 80%;
 }
