@@ -3,15 +3,51 @@
   <head>
     <meta charset="UTF-8">
     <title>FEC Kickstarter</title>
+    <link rel="stylesheet" href="http://ec2-54-67-1-177.us-west-1.compute.amazonaws.com:3000/style.css">
+    <link rel="stylesheet" href="http://ec2-3-15-177-95.us-east-2.compute.amazonaws.com:3003/styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div id="app"></div>
-    <div id="campaign"></div>
-    <div id="pledge"></div>
-    <div id="community"></div>
-    <script src="bundle.js"></script>
-    <script src="http://localhost:3000/bundle.js"></script>
-    <script src="http://localhost:3002/bundle.js"></script>
-    <script src="http://localhost:3003/bundle.js"></script>
+    <!-- NAVBAR-->
+    <nav id="main-nav">
+      <a href="index.html">Explore</a>
+      <a href="index.html">Start a project</a>
+      <a href="index.html" class="logo">Kickstarter</a>
+      <a href="index.html">Search</a>
+      <a href="index.html">Log in</a>
+    </nav>
+    <div id="header"></div>
+
+    <!-- MAIN CONTENT TABS -->
+    <div class="tabs">
+      <div class="tabs-left">
+        <button class="tab-links">Campaign</button>
+        <button class="tab-links">Community</button>
+        <button class="tab-links">Updates</button>
+      </div>
+      <div class="tabs-right">
+        <button id="back-project">Back this project</button>
+        <button class="tab-links">Remind me</button>
+      </div>
+    </div>
+
+    <!-- MAIN CONTENT DISPLAY -->
+    <div id="main-content">
+      <div id="campaign" class="tab-content">
+        <div id="story">Story/Risks</div>
+        <div id="pledge"></div>
+      </div>
+      <div id="community" class="tab-content"></div>
+      <div id="updates" class="tab-content"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    <script src="mainContent.js"></script>
+    <script src="http://ec2-54-67-1-177.us-west-1.compute.amazonaws.com:3000/bundle.js"></script>
+    <!-- <script src="http://localhost:3002/bundle.js"></script> -->
+    <script src="http://ec2-3-15-177-95.us-east-2.compute.amazonaws.com:3003/bundle.js"></script>
+    <!-- <script src="http://localhost:3004/bundle.js"></script> -->
+    <script src="http://ec2-3-128-76-202.us-east-2.compute.amazonaws.com:3007/bundle.js"></script>
   </body>
 </html>

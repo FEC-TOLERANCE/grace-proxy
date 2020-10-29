@@ -1,0 +1,109 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*** NAVBAR ***/
+#main-nav {
+  padding-left: 2.4rem;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 4fr 1fr 1fr;
+}
+
+#main-nav a {
+  margin-right: 1.2rem;
+  color: #282828;
+  background-color: #ffffff;
+  font-size: .9rem;
+  border: 0;
+  cursor: pointer;
+  padding: 0;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 300;
+}
+
+#main-nav .logo {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+
+/*** TAB NAVBAR ***/
+.tabs {
+  width: 100%;
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+  border-top: 1px solid #D0D0D0;
+  border-bottom: 1px solid #D0D0D0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.tabs button {
+  border: 0;
+  padding: 20px;
+  background-color: #ffffff;
+  cursor: pointer;
+  font-weight: 300;
+  font-family: 'Roboto', sans-serif;
+}
+
+.tabs button:hover {
+  color: #028858;
+}
+
+.tabs button:focus {
+  border-bottom: 3px solid black;
+  outline: 1px solid #D0D0D0;
+}
+
+.tabs-left, .tabs-right {
+  display:inline-block;
+}
+
+.tabs-left {
+  grid-column: 1;
+}
+
+.tabs-right {
+  grid-column: 2;
+}
+
+#back-project {
+  background-color: #028858;
+  color: white;
+  padding: 10px 20px;
+}
+
+#back-project:hover {
+  background-color: #015738;
+}
+
+/*** TABBED CONTENT ***/
+#main-content {
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.tab-content {
+  display: none;
+  box-sizing: border-box;
+  height: 80%;
+}
+
+#campaign {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-sizing: border-box;
+}
+
+#pledge {
+  box-sizing: border-box;
+  position: sticky;
+  overflow-y: scroll;
+  height: 80%;
+}
